@@ -3,6 +3,7 @@ package main.java.sort;
 import java.util.Arrays;
 
 /**
+ *
  * @author loukai
  * @date 2019/11/15 9:55
  * @since v2.4
@@ -13,5 +14,6 @@ public class SortTest {
     public static void main(String[] args) {
 
         System.out.println(Arrays.toString(BubbleSort.sort(arr)));
+        System.out.println(Arrays.toString(SelectSort.sort(arr)));
     }
 }
