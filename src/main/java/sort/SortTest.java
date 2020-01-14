@@ -1,6 +1,7 @@
 package main.java.sort;
 
 import java.util.Arrays;
+import java.util.Random;
 
 /**
  *
@@ -9,11 +10,22 @@ import java.util.Arrays;
  * @since v2.4
  */
 public class SortTest {
-    static int[] arr = {4,100,97,12,67,39,10,6,7,9,1,3,11,21,22,23,43,43,42,5,6,12,6,8};
+    static int[] arr =new int[100];
 
     public static void main(String[] args) {
+        Random r = new Random(1);
+        for (int i =0;i<100;i++){
+            int random = r.nextInt(101);
+            arr[i]=random;
+        }
+        System.out.println(Arrays.toString(arr));
+        System.out.println();
+        System.out.println();
+
 
         System.out.println(Arrays.toString(BubbleSort.sort(arr)));
         System.out.println(Arrays.toString(SelectSort.sort(arr)));
+        System.out.println(Arrays.toString(InsertionSort.sort(arr)));
     }
+
 }
