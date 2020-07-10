@@ -18,14 +18,16 @@ public class SortTest {
             int random = r.nextInt(101);
             arr[i]=random;
         }
-        System.out.println(Arrays.toString(arr));
+        System.out.println("原数组:"+Arrays.toString(arr));
         System.out.println();
         System.out.println();
 
 
-        System.out.println(Arrays.toString(BubbleSort.sort(arr)));
-        System.out.println(Arrays.toString(SelectSort.sort(arr)));
-        System.out.println(Arrays.toString(InsertionSort.sort(arr)));
+        System.out.println("冒泡排序  :"+Arrays.toString(BubbleSort.sort(Arrays.copyOf(arr,arr.length))));
+        System.out.println("选择排序  :"+Arrays.toString(SelectSort.sort(Arrays.copyOf(arr,arr.length))));
+        System.out.println("插入排序  :"+Arrays.toString(InsertionSort.sort(Arrays.copyOf(arr,arr.length))));
+        System.out.println("my插入排序:"+Arrays.toString(InsertionSort.mySort(Arrays.copyOf(arr,arr.length))));
+        System.out.println(Arrays.toString(ShellSort.sort(Arrays.copyOf(arr,arr.length))));
     }
 
 }
