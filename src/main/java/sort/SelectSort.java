@@ -2,6 +2,8 @@ package main.java.sort;
 
 import main.java.util.CommonUtils;
 
+import java.util.Arrays;
+
 /**
  * 选择排序
  * 时间复杂度：O(N2) 　　
@@ -25,5 +27,13 @@ public class SelectSort {
             }
         }
         return arr;
+    }
+
+    public static void print(int[] arr,boolean isPrintArr) {
+        int[] newArr = Arrays.copyOf(arr, arr.length);
+        long start = System.currentTimeMillis();
+        int[] sortArr = sort(newArr);
+        long end = System.currentTimeMillis();
+        System.out.println("选择排序 耗时:" + (end - start) + (isPrintArr?Arrays.toString(sortArr):""));
     }
 }
