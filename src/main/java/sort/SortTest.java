@@ -1,6 +1,5 @@
 package main.java.sort;
 
-import java.util.Arrays;
 import java.util.Random;
 
 /**
@@ -25,9 +24,9 @@ public class SortTest {
         System.out.println();
         System.out.println();
         boolean isShow = false;
-        BubbleSort.print(arr,isShow);
-        InsertionSort.print(arr,isShow);
-        SelectSort.print(arr,isShow);
+//        BubbleSort.print(arr,isShow);
+//        InsertionSort.print(arr,isShow);
+//        SelectSort.print(arr,isShow);
         ShellSort.print(arr,isShow);
 
 

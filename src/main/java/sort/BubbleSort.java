@@ -16,7 +16,7 @@ import java.util.Arrays;
  * @author loukai
  * @date 2019/11/14 11:05
  */
-public class BubbleSort {
+public class BubbleSort{
 
     public static int[] sort(int[] arr) {
         if (arr == null || arr.length < 2) {
